@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <!-- HEAD -->
+  {{>email/head}}
+  <!-- /HEAD -->
+
+  <body bgcolor="#FFFFFF">
+
+    <!-- HEADER -->
+    {{>email/header}}
+    <!-- /HEADER -->
+
+    <!-- BODY -->
+    <table class="body-wrap">
+    	<tr>
+    		<td></td>
+    		<td class="container" bgcolor="#FFFFFF">
+
+    			<div class="content">
+    			<table>
+    				<tr>
+    					<td>
+
+    						<h3>¿Olvidaste tu contraseña?</h3>
+
+    						<!-- Callout Panel -->
+    						<p class="callout">
+                  Hola {{name}}, no te preocupes, puedes tener otra contraseña y seguir disfrutando
+                  de la aplicación mobi. Solamente haz clic en el botón de abajo y listo.
+    						</p><!-- /Callout Panel -->
+
+                <p>
+									<a class="btn" href="{{url}}" target="_blank">Restablecer contraseña ahora</a>
+								</p>
+
+    						<br/>
+    						<br/>
+
+
+    					</td>
+    				</tr>
+    			</table>
+    			</div>
+
+    		</td>
+    		<td></td>
+    	</tr>
+    </table><!-- /BODY -->
+
+    <!-- FOOTER -->
+    {{>email/footer}}
+    <!-- /FOOTER -->
+
+  </body>
+</html>

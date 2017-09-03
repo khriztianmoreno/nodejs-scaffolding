@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <!-- HEAD -->
+  {{>email/head}}
+  <!-- /HEAD -->
+
+  <body bgcolor="#FFFFFF">
+
+    <!-- HEADER -->
+    {{>email/header}}
+    <!-- /HEADER -->
+
+    <!-- BODY -->
+    <table class="body-wrap">
+    	<tr>
+    		<td></td>
+    		<td class="container" bgcolor="#FFFFFF">
+
+    			<div class="content">
+    			<table>
+    				<tr>
+    					<td>
+
+    						<h3>¡Bienvenido, {{name}}!</h3>
+    						<p class="lead">
+                  Tan sólo falta confirmar tu correo para que comiences a utilizar
+                  el sistema. Es fácil, sólo debes dar clic en el enlace de abajo y listo.
+                </p>
+
+    						<p></p>
+                <a class="btn" href="{{url}}">Activa tu cuenta</a>
+
+
+    						<br/>
+    						<br/>
+
+    					</td>
+    				</tr>
+    			</table>
+    			</div>
+
+    		</td>
+    		<td></td>
+    	</tr>
+    </table><!-- /BODY -->
+
+    <!-- FOOTER -->
+    {{>email/footer}}
+    <!-- /FOOTER -->
+
+  </body>
+</html>

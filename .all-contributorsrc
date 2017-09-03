@@ -1,0 +1,22 @@
+{
+  "projectName": "nodejs-scaffolding",
+  "projectOwner": "khriztianmoreno",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "khriztianmoreno",
+      "name": "Khriztian Moreno",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1481964?v=4",
+      "profile": "http://khriztianmoreno.com/",
+      "contributions": [
+        "code",
+        "doc",
+        "example"
+      ]
+    }
+  ]
+}
