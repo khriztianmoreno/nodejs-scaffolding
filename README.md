@@ -7,6 +7,37 @@ Hello, and welcome! This Node.JS sample application that demonstrates an archite
 - Built with Node.js and Express
 - REST API with authentication scheme
 
+## Express Router and Routes
+
+| Route           | HTTP Verb | Route Middleware   | Description                          |
+| --------------- | --------- | ------------------ | ------------------------------------ |
+| /api/users      | GET       |                    | Get list of users                    |
+| /api/users      | POST      |                    | Creates a new user                   |
+| /api/users/:id  | GET       | `isAuthenticated`  | Get a single user                    |
+| /api/users/:id  | DELETE    | `hasRole('admin')` | Deletes a user, restriction: 'admin' |
+| /api/users/me   | GET       | `isAuthenticated`  | Get my info                          |
+| /api/users:id/password | PUT| `isAuthenticated`  | Change a users password              |
+
+## Usage
+
+### Basic example **Create USER** `/api/users`:
+
+Request Body:
+```json
+{
+  "name": "CRISTIAN MORENO",
+  "email": "khriztianmoreno@myemail.com",
+  "password": "my-secret-password"
+}
+```
+
+Response:
+```json
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OWFiNzkyMWQ1Yzk3NjJlZGQzZmUwZDgiLCJpYXQiOjE1MDQ0MDk4ODksImV4cCI6MTUwNDQyNzg4OX0.2gZPXZ-dQc3kQ1fcIDryHm4gIqWLvcw6guAOnP0ueGU"
+}
+```
+
 ## Getting Started
 
 ### Prerequisites
