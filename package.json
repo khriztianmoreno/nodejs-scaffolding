@@ -10,7 +10,8 @@
     "jshint": "jshint src/. test/. --config",
     "mocha": "mocha test/ --recursive",
     "add": "all-contributors add",
-    "generate": "all-contributors generate"
+    "generate": "all-contributors generate",
+    "tunnel": "ngrok http 3030"
   },
   "repository": "https://github.com/khriztianmoreno/nodejs-scaffolding.git",
   "keywords": [
@@ -55,6 +56,7 @@
     "mongoose": "^4.1.2",
     "mongoose-paginate": "^5.0.0",
     "morgan": "~1.7.0",
+    "ngrok": "^3.0.1",
     "nodemailer": "^2.6.0",
     "nodemailer-direct-transport": "^3.3.2",
     "nodemailer-express-handlebars": "^2.0.0",

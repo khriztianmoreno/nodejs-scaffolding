@@ -14,6 +14,7 @@ const auth = require('./auth');
 module.exports = (app) => {
   const whitelist = [
     'http://localhost:3030',
+    'http://localhost:8080',
   ];
 
   const corsOptions = {

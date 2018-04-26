@@ -34,6 +34,9 @@ function create(req, res) {
   const newUser = new User(req.body);
   newUser.provider = 'local';
   newUser.role = 'user';
+
+  console.log('User', newUser)
+
   newUser.save()
     .then((user) => {
       const token = jwt.sign(

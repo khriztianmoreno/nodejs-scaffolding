@@ -10,13 +10,9 @@ const Schema = mongoose.Schema;
 const authTypes = ['github', 'twitter', 'facebook', 'google'];
 mongoose.Promise = require('bluebird');
 
-const AdditionalDataSchema = new Schema({
-  address: { type: String, uppercase: true },
-  phoneNumber: { type: String },
-  country: { type: String, default: 'COLOMBIA', uppercase: true },
-  city: { type: String, default: 'MEDELLIN', uppercase: true },
-  language: { type: String, default: 'ES', uppercase: true },
-  timeZone: { type: String, default: 'America/Bogota' },
+const FriendsSchema = new Schema({
+  id: { type: String, uppercase: true },
+  name: { type: String, uppercase: true },
   picture: { type: String, lowercase: true },
 }, { _id: false });
 
@@ -43,7 +39,7 @@ const UserSchema = new Schema({
       return false;
     }, this),
   },
-  additionalData: AdditionalDataSchema,
+  friends: FriendsSchema,
   provider: String,
   salt: String,
   facebook: {},
