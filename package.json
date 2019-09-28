@@ -54,7 +54,7 @@
     "moment": "^2.14.1",
     "mongoose": "^4.1.2",
     "mongoose-paginate": "^5.0.0",
-    "morgan": "~1.7.0",
+    "morgan": "~1.9.0",
     "nodemailer": "^2.6.0",
     "nodemailer-direct-transport": "^3.3.2",
     "nodemailer-express-handlebars": "^2.0.0",
