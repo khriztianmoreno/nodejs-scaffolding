@@ -31,7 +31,7 @@
     "node": "^6.9.x"
   },
   "dependencies": {
-    "async": "^2.0.1",
+    "async": "^3.0.0",
     "azure-storage": "^1.3.2",
     "babel-polyfill": "^6.7.2",
     "babel-runtime": "^6.6.1",
