@@ -75,6 +75,6 @@
     "eslint-loader": "1.9.0",
     "eslint-plugin-import": "2.18.2",
     "nodemon": "1.19.2",
-    "all-contributors-cli": "4.11.2"
+    "all-contributors-cli": "6.9.1"
   }
 }
