@@ -69,12 +69,12 @@
     "winston": "^2.3.1"
   },
   "devDependencies": {
-    "babel-eslint": "^7.1.1",
-    "eslint": "^3.12.2",
-    "eslint-config-airbnb-base": "^10.0.1",
-    "eslint-loader": "^1.6.1",
-    "eslint-plugin-import": "^2.2.0",
-    "nodemon": "^1.11.0",
-    "all-contributors-cli": "^4.3.0"
+    "babel-eslint": "7.2.3",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb-base": "10.0.1",
+    "eslint-loader": "1.9.0",
+    "eslint-plugin-import": "2.18.2",
+    "nodemon": "1.19.2",
+    "all-contributors-cli": "4.11.2"
   }
 }
